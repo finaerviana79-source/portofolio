@@ -3,86 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fina Erviana | Portfolio</title>
+<title>Fina Erviana | Talent Acquisition</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#0f172a;color:#e2e8f0;scroll-behavior:smooth}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    animation:fadeIn 1.5s ease;
 }
 
-body {
-    background: #0f172a;
-    color: #e2e8f0;
-    line-height: 1.6;
+header img{
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #3b82f6;
+    margin-bottom:20px;
 }
 
-header {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: linear-gradient(135deg, #1e293b, #0f172a);
+h1{font-size:42px;font-weight:600}
+header p{color:#94a3b8;margin-top:10px}
+
+section{max-width:900px;margin:auto;padding:80px 20px}
+
+.card{
+    background:#1e293b;
+    padding:30px;
+    border-radius:14px;
+    margin-bottom:30px;
+    border:1px solid #334155;
+    transition:.4s;
+    opacity:0;
+    transform:translateY(40px);
 }
 
-header h1 {
-    font-size: 48px;
-    font-weight: 600;
+.card.show{
+    opacity:1;
+    transform:translateY(0);
 }
 
-header p {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #94a3b8;
+.card:hover{
+    border-color:#3b82f6;
+    transform:translateY(-6px);
 }
 
-section {
-    padding: 80px 20px;
-    max-width: 1000px;
-    margin: auto;
+h2{color:#3b82f6;margin-bottom:15px}
+
+ul{list-style:none}
+ul li{margin-bottom:10px}
+
+a{color:#3b82f6;text-decoration:none}
+
+.social{
+    margin-top:15px;
+    font-size:22px;
 }
 
-.card {
-    background: #1e293b;
-    padding: 30px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-    transition: 0.3s;
-    border: 1px solid #334155;
+footer{
+    text-align:center;
+    padding:40px;
+    color:#64748b;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #3b82f6;
-}
-
-h2 {
-    margin-bottom: 15px;
-    color: #3b82f6;
-}
-
-ul {
-    list-style: none;
-}
-
-ul li {
-    margin-bottom: 10px;
-}
-
-footer {
-    text-align: center;
-    padding: 40px;
-    color: #64748b;
-}
-a {
-    color: #3b82f6;
-    text-decoration: none;
+@keyframes fadeIn{
+    from{opacity:0;transform:translateY(-20px)}
+    to{opacity:1;transform:translateY(0)}
 }
 </style>
 </head>
@@ -90,47 +86,61 @@ a {
 <body>
 
 <header>
+    <img src="foto.jpg" alt="Fina Photo">
     <h1>Hi, I'm Fina 👋</h1>
     <p>Talent Acquisition • Human Capital • HR-Tech Enthusiast</p>
+    <div class="social">
+        <a href="https://www.linkedin.com/in/fina-erviana-370601151/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
 </header>
 
 <section>
-    <div class="card">
-        <h2>About Me</h2>
-        <p>
-            I am a Human Capital professional specializing in Talent Acquisition, with a strong interest in Employer Branding,
-            HR Analytics, and HR Technology to create data-driven recruitment strategies.
-        </p>
-    </div>
 
-    <div class="card">
-        <h2>What I Do</h2>
-        <ul>
-            <li>✔ Recruitment Strategy & Hiring Plan</li>
-            <li>✔ Employer Branding & LinkedIn Optimization</li>
-            <li>✔ HR Reporting & Analytics</li>
-            <li>✔ Exploring HR-Tech & Digital Solutions</li>
-        </ul>
-    </div>
+<div class="card">
+    <h2>About Me</h2>
+    <p>
+        Human Capital professional specializing in Talent Acquisition with strong passion in Employer Branding,
+        HR Analytics, and technology-driven recruitment strategies.
+    </p>
+</div>
 
-    <div class="card">
-        <h2>Projects & Experience</h2>
-        <p>
-            Coming soon — recruitment dashboards, employer branding campaigns, and HR analytics projects.
-        </p>
-    </div>
+<div class="card">
+    <h2>What I Do</h2>
+    <ul>
+        <li>✔ Recruitment Strategy & Workforce Planning</li>
+        <li>✔ Employer Branding & LinkedIn Optimization</li>
+        <li>✔ HR Reporting & Analytics</li>
+        <li>✔ HR-Tech & Digital Transformation</li>
+    </ul>
+</div>
 
-    <div class="card">
-        <h2>Contact</h2>
-        <p>
-            LinkedIn: <a href="#">Your LinkedIn URL</a>
-        </p>
-    </div>
+<div class="card">
+    <h2>Experience</h2>
+    <p>
+        Talent Acquisition experience in healthcare industry, managing end-to-end recruitment,
+        employer branding initiatives, and building data-driven hiring reports.
+    </p>
+</div>
+
 </section>
 
 <footer>
-    © 2026 Fina Erviana — Built with GitHub Pages
+    © 2026 Fina Erviana — Personal Branding Portfolio
 </footer>
+
+<script>
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll', () => {
+    cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            card.classList.add('show');
+        }
+    });
+});
+</script>
 
 </body>
 </html>
