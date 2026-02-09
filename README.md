@@ -1,3 +1,0 @@
-IKIGAI
-
-Hi everyone
