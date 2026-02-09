@@ -1,76 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Fina Erviana | Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f5f7fa;
-            color: #333;
-            text-align: center;
-        }
-        header {
-            background: #1f2937;
-            color: white;
-            padding: 60px 20px;
-        }
-        h1 {
-            margin: 0;
-            font-size: 40px;
-        }
-        section {
-            padding: 40px 20px;
-        }
-        .card {
-            background: white;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        }
-        a {
-            color: #2563eb;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fina Erviana | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #94a3b8;
+}
+
+section {
+    padding: 80px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    border: 1px solid #334155;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #3b82f6;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #3b82f6;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: #64748b;
+}
+a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+</style>
 </head>
+
 <body>
 
 <header>
     <h1>Hi, I'm Fina 👋</h1>
-    <p>Talent Acquisition | Human Capital | HR-Tech Enthusiast</p>
+    <p>Talent Acquisition • Human Capital • HR-Tech Enthusiast</p>
 </header>
 
 <section>
     <div class="card">
         <h2>About Me</h2>
         <p>
-            I work in Human Capital, specializing in Talent Acquisition.
-            Passionate about employer branding, HR analytics, and technology-driven HR solutions.
+            I am a Human Capital professional specializing in Talent Acquisition, with a strong interest in Employer Branding,
+            HR Analytics, and HR Technology to create data-driven recruitment strategies.
         </p>
     </div>
 
     <div class="card">
         <h2>What I Do</h2>
+        <ul>
+            <li>✔ Recruitment Strategy & Hiring Plan</li>
+            <li>✔ Employer Branding & LinkedIn Optimization</li>
+            <li>✔ HR Reporting & Analytics</li>
+            <li>✔ Exploring HR-Tech & Digital Solutions</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h2>Projects & Experience</h2>
         <p>
-            • Recruitment Strategy<br>
-            • Employer Branding<br>
-            • HR Data & Reporting<br>
-            • HR-Tech Exploration
+            Coming soon — recruitment dashboards, employer branding campaigns, and HR analytics projects.
         </p>
     </div>
 
     <div class="card">
         <h2>Contact</h2>
         <p>
-            LinkedIn: <a href="#">Your LinkedIn Link</a>
+            LinkedIn: <a href="#">Your LinkedIn URL</a>
         </p>
     </div>
 </section>
+
+<footer>
+    © 2026 Fina Erviana — Built with GitHub Pages
+</footer>
 
 </body>
 </html>
