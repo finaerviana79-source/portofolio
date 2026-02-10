@@ -39,12 +39,44 @@ body{background:#f5f5f5;color:#2b2b2b}
 h1{font-size:44px;font-weight:600;margin-bottom:10px}
 .hero p{color:#555;max-width:650px}
 
+/* books */
+.books{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+    gap:24px;
+    margin-top:25px;
+}
+
+.book-card{
+    background:white;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+}
+
+.book-card:hover{
+    transform:translateY(-8px);
+}
+
+.book-card img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.book-card p{
+    padding:12px;
+    font-weight:500;
+}
+    
 /* SECTION */
 section{max-width:950px;margin:auto;padding:80px 20px}
 .card{
     background:white;padding:40px;border-radius:16px;margin-bottom:40px;
     box-shadow:0 15px 40px rgba(0,0,0,0.06);
-}
+} 
 h2{margin-bottom:20px;font-size:26px;border-left:4px solid #333;padding-left:12px}
 ul{margin-top:15px;padding-left:18px;line-height:1.9}
 .social{margin-top:15px;font-size:22px}
@@ -57,9 +89,10 @@ footer{text-align:center;padding:50px;color:#777}
 <header class="navbar">
     <div class="logo">Fina Erviana</div>
     <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#books">Books</a>
+    <a href="#contact">Contact</a>
     </nav>
 </header>
 
@@ -131,6 +164,37 @@ footer{text-align:center;padding:50px;color:#777}
             </ul>
         </div>
 
+    </div>
+</section>
+
+<section id="books">
+    <div class="card">
+        <h2>📚 Books I Learn From</h2>
+
+        <div class="books">
+
+            <div class="book-card">
+                <a href="https://example.com" target="_blank">
+                    <img src="atomic-habits.jpg" alt="Atomic Habits">
+                    <p>Atomic Habits</p>
+                </a>
+            </div>
+
+            <div class="book-card">
+                <a href="https://example.com" target="_blank">
+                    <img src="deep-work.jpg" alt="Deep Work">
+                    <p>Deep Work</p>
+                </a>
+            </div>
+
+            <div class="book-card">
+                <a href="https://example.com" target="_blank">
+                    <img src="gtd.jpg" alt="GTD">
+                    <p>Getting Things Done</p>
+                </a>
+            </div>
+
+        </div>
     </div>
 </section>
 
