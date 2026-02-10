@@ -14,7 +14,35 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+.navbar {
+    position: sticky;
+    top: 0;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
 
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbar nav a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover {
+    color: #4a90e2;
+}
 <script>
 const cards = document.querySelectorAll('.card');
 window.addEventListener('scroll', () => {
@@ -25,6 +53,7 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+    
 </script>
     
     
@@ -33,14 +62,6 @@ body{
     color:#2b2b2b;
     scroll-behavior:smooth;
 }
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#experience">Experience</a>
-    <a href="#books">Books</a>
-    <a href="#contact">Contact</a>
-</nav>
-    
 nav{
     position:fixed;
     top:0;
