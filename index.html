@@ -70,6 +70,31 @@ h1{font-size:44px;font-weight:600;margin-bottom:10px}
     padding:12px;
     font-weight:500;
 }
+   
+/* tools */
+.tools{
+    display:flex;
+    flex-wrap:wrap;
+    gap:14px;
+    margin-top:20px;
+}
+
+.tool-badge{
+    padding:10px 16px;
+    border-radius:999px;
+    background:linear-gradient(135deg,#e6eef8,#f8fbff);
+    border:1px solid #dbe7f5;
+    font-size:14px;
+    font-weight:500;
+    color:#334155;
+    box-shadow:0 6px 18px rgba(0,0,0,0.06);
+    transition:.3s;
+}
+
+.tool-badge:hover{
+    transform:translateY(-4px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
     
 /* SECTION */
 section{max-width:950px;margin:auto;padding:80px 20px}
@@ -195,6 +220,23 @@ footer{text-align:center;padding:50px;color:#777}
                 </a>
             </div>
 
+        </div>
+    </div>
+</section>
+
+<section id="tools">
+    <div class="card">
+        <h2>🛠️ Tools & Systems I Use</h2>
+
+        <div class="tools">
+            <div class="tool-badge">💻 Darwinbox HRIS</div>
+            <div class="tool-badge">💻 Talenta HRIS</div>
+            <div class="tool-badge">🔎 LinkedIn Recruiter</div>
+            <div class="tool-badge">📊 Excel for HR Analytics</div>
+            <div class="tool-badge">🧠 Online Psychotest System</div>
+            <div class="tool-badge">🏢 HRD Room</div>
+            <div class="tool-badge">🌐 Jobstreet • Glints • Kitalulus</div>
+            <div class="tool-badge">🎯 Employer Branding Strategy</div>
         </div>
     </div>
 </section>
