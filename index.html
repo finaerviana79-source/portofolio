@@ -14,35 +14,48 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-.navbar {
-    position: sticky;
-    top: 0;
-    background: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 60px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    z-index: 1000;
+html{ scroll-behavior:smooth; }
+
+.navbar{
+    position:sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    z-index:1000;
 }
 
-.logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 1px;
+.logo{
+    font-size:22px;
+    font-weight:600;
 }
 
-.navbar nav a {
-    margin-left: 30px;
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: 0.3s;
+.navbar nav a{
+    margin-left:30px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:.3s;
 }
 
-.navbar nav a:hover {
-    color: #4a90e2;
+.navbar nav a:hover{
+    color:#3b82f6;
 }
+
+.hero{
+    min-height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(180deg,#ffffff,#f2f2f2);
+}
+
 <script>
 const cards = document.querySelectorAll('.card');
 window.addEventListener('scroll', () => {
@@ -68,7 +81,7 @@ body{
     scroll-behavior:smooth;
 }
 
-<header class="navbar">
+<section class="hero" id="about">
     <div class="logo">FinaErviana</div>
     <nav>
         <a href="#about">About</a>
@@ -76,35 +89,8 @@ body{
         <a href="#books">Books</a>
         <a href="#contact">Contact</a>
     </nav>
-</header>
-
-nav{
-    position:fixed;
-    top:0;
-    width:100%;
-    background:rgba(255,255,255,0.85);
-    backdrop-filter:blur(10px);
-    padding:18px 0;
-    text-align:center;
-    border-bottom:1px solid #e5e5e5;
-    z-index:999;
-}
+</section>
     
-nav a{
-    color:#333;
-    margin:0 20px;
-    text-decoration:none;
-    font-weight:500;
-    letter-spacing:0.5px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:black;
-}
-
-body{ padding-top:80px; }
-
 header{
     min-height:85vh;
     display:flex;
@@ -258,7 +244,7 @@ footer{
 </div>
 
 <div class="card">
-    <h2>Experience</h2>
+    <h2 id="experience">Experience</h2>
 
     <!-- Mayapada -->
     <div style="margin-bottom:45px;">
