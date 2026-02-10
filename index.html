@@ -11,8 +11,13 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 html{scroll-behavior:smooth}
-body{background:#f5f5f5;color:#2b2b2b}
-
+body{background:radial-gradient(circle at 10% 20%, #eaf3ff 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, #eaf3ff 0%, transparent 40%),#f7fbff;
+    color:#2b2b2b;}
+section + section{
+    border-top:1px solid #e6eef8;
+}
+    
 /* NAVBAR */
 .navbar{
     position:sticky;top:0;background:white;
@@ -97,9 +102,9 @@ h1{font-size:44px;font-weight:600;margin-bottom:10px}
 }
     
 /* SECTION */
-section{max-width:950px;margin:auto;padding:80px 20px}
+section{ max-width:1000px;margin:40px auto;padding:40px 20px;}
 .card{
-    background:white;padding:40px;border-radius:16px;margin-bottom:40px;
+    background:white;padding:28px;border-radius:16px;margin-bottom:24px;
     box-shadow:0 15px 40px rgba(0,0,0,0.06);
 } 
 h2{margin-bottom:20px;font-size:26px;border-left:4px solid #333;padding-left:12px}
