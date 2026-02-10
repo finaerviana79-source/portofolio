@@ -15,7 +15,27 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
 html{ scroll-behavior:smooth; }
-
+    
+.hero{
+    min-height:85vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px 20px;
+    background:linear-gradient(180deg,#ffffff,#f2f2f2);
+}
+    
+.hero img{
+    width:240px;
+    height:240px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:25px;
+    box-shadow:0 20px 40px rgba(0,0,0,0.1);
+}
+    
 .navbar{
     position:sticky;
     top:0;
@@ -45,16 +65,7 @@ html{ scroll-behavior:smooth; }
     color:#3b82f6;
 }
 
-.hero{
-    min-height:85vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(180deg,#ffffff,#f2f2f2);
-}
+
 
 <script>
 const cards = document.querySelectorAll('.card');
