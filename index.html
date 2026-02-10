@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="description" content="Fina Erviana - Talent Acquisition Supervisor with expertise in Employer Branding, HR Analytics, and HR Technology.">
-<meta name="keywords" content="Talent Acquisition, HR, Employer Branding, HRIS, HR Tech, Recruitment">
-<meta name="author" content="Fina Erviana">
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fina Erviana | Work ^ Wonder</title>
@@ -14,324 +10,80 @@
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
-html{ scroll-behavior:smooth; }
-    
-.hero{
-    min-height:85vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(180deg,#ffffff,#f2f2f2);
-}
-    
-.hero img{
-    width:240px;
-    height:240px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:25px;
-    box-shadow:0 20px 40px rgba(0,0,0,0.1);
-}
-    
+html{scroll-behavior:smooth}
+body{background:#f5f5f5;color:#2b2b2b}
+
+/* NAVBAR */
 .navbar{
-    position:sticky;
-    top:0;
-    background:white;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 60px;
-    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;top:0;background:white;
+    display:flex;justify-content:space-between;align-items:center;
+    padding:18px 60px;box-shadow:0 2px 10px rgba(0,0,0,0.05);
     z-index:1000;
 }
-
-.logo{
-    font-size:22px;
-    font-weight:600;
-}
-
+.logo{font-size:22px;font-weight:600}
 .navbar nav a{
-    margin-left:30px;
-    text-decoration:none;
-    color:#333;
-    font-weight:500;
-    transition:.3s;
+    margin-left:30px;text-decoration:none;color:#333;font-weight:500
 }
 
-.navbar nav a:hover{
-    color:#3b82f6;
+/* HERO */
+.hero{
+    min-height:90vh;
+    display:flex;flex-direction:column;justify-content:center;align-items:center;
+    text-align:center;padding:40px 20px;
 }
-
-
-
-<script>
-const cards = document.querySelectorAll('.card');
-window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if(top < window.innerHeight - 80){
-            card.classList.add('show');
-        }
-    });
-});
-
-html {
-    scroll-behavior: smooth;
-}
-
-    
-</script>
-    
-    
-body{
-     background:#f5f5f5;
-    color:#2b2b2b;
-    scroll-behavior:smooth;
-}
-
-<section class="hero" id="about">
-    <div class="logo">FinaErviana</div>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#experience">Experience</a>
-        <a href="#books">Books</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</section>
-    
-header{
-    min-height:85vh;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:40px 20px;
-    background:linear-gradient(180deg,#ffffff,#f2f2f2);
-}
-
-header img{
-     width:240px;
-    height:240px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:25px;
+.hero img{
+    width:240px;height:240px;border-radius:50%;
+    object-fit:cover;margin-bottom:25px;
     box-shadow:0 20px 40px rgba(0,0,0,0.1);
 }
+h1{font-size:44px;font-weight:600;margin-bottom:10px}
+.hero p{color:#555;max-width:650px}
 
-h1{font-size:44px;font-weight:600}
-header p{
-    margin-top:12px;
-    color:#555;
-    max-width:600px;}
-
-section{ max-width:950px;
-    margin:auto;
-    padding:80px 20px;}
-
+/* SECTION */
+section{max-width:950px;margin:auto;padding:80px 20px}
 .card{
-    background:white;
-    padding:40px;
-    border-radius:16px;
-    margin-bottom:40px;
+    background:white;padding:40px;border-radius:16px;margin-bottom:40px;
     box-shadow:0 15px 40px rgba(0,0,0,0.06);
-    transition:.4s;
-    opacity:0;
-    transform:translateY(40px);
 }
-
-.card.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-h2{ margin-bottom:20px;
-    font-size:26px;
-    border-left:4px solid #333;
-    padding-left:12px;}
-
-h3{
-    margin-top:15px;
-    margin-bottom:6px;
-}
-    
-ul{
-    margin-top:15px;
-    padding-left:18px;
-    line-height:1.9;
-}
-ul li{margin-bottom:10px}
-
-a{color:#3b82f6;text-decoration:none}
-
-.social{
-    margin-top:15px;
-    font-size:22px;
-}
-
-.books{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
-    gap:24px;
-    margin-top:20px;
-}
-
-.book-card{
-    border-radius:12px;
-    overflow:hidden;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:.3s;
-    background:white;
-}
-
-.book-card:hover{
-    transform:translateY(-8px);
-}
-
-.book-card img{
-    width:100%;
-    height:230px;
-    object-fit:cover;
-}
-
-.book-card p{
-    padding:12px;
-    font-weight:500;
-}
-    
-footer{
-    text-align:center;
-    padding:50px;
-    color:#777;}
-
-@keyframes fadeIn{
-    from{opacity:0;transform:translateY(-20px)}
-    to{opacity:1;transform:translateY(0)}
-}
+h2{margin-bottom:20px;font-size:26px;border-left:4px solid #333;padding-left:12px}
+ul{margin-top:15px;padding-left:18px;line-height:1.9}
+.social{margin-top:15px;font-size:22px}
+footer{text-align:center;padding:50px;color:#777}
 </style>
 </head>
 
 <body>
 
-<header>
+<header class="navbar">
+    <div class="logo">FinaErviana</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="about">
     <img src="foto.jpg" alt="Fina Photo">
     <h1>Hi, I'm Fina Erviana 👋</h1>
     <p>Talent Acquisition • Human Capital • HR-Tech Enthusiast</p>
-    <p style="margin-top:12px; color:#94a3b8; max-width:600px;">
-    Turning recruitment into a data-driven, systemized, and impactful people strategy.
-</p>
     <div class="social">
         <a href="https://www.linkedin.com/in/fina-erviana-370601151/" target="_blank">
             <i class="fab fa-linkedin"></i>
         </a>
     </div>
-</header>
+</section>
 
-<section>
-
-<div class="card">
-    <h2>About Me</h2>
-    <p>
-        Human Capital professional specializing in Talent Acquisition with strong passion in Employer Branding,
-        HR Analytics, and technology-driven recruitment strategies.
-    </p>
-</div>
-
-<div class="card">
-    <h2>What I Do</h2>
-    <ul>
-        <li>✔ Recruitment Strategy & Workforce Planning</li>
-        <li>✔ Employer Branding & LinkedIn Optimization</li>
-        <li>✔ HR Reporting & Analytics</li>
-        <li>✔ HR-Tech & Digital Transformation</li>
-    </ul>
-</div>
-
-<div class="card">
-    <h2 id="experience">Experience</h2>
-
-    <!-- Mayapada -->
-    <div style="margin-bottom:45px;">
-        <h3>🏥 Mayapada Healthcare Group</h3>
-        <p><i>Hospital & Healthcare (Corporate & 7 Hospital Units)</i></p>
-        <p><b>Talent Acquisition Supervisor | Apr 2024 – Present</b></p>
-
-        <ul style="margin-top:15px; line-height:1.9;">
-            <li>📌 Manage Manpower Planning and end-to-end recruitment for Manager level and above (Medical & Non-Medical)</li>
-            <li>📊 Monitor SLA & fulfillment across all hospital units by level</li>
-            <li>💻 Develop recruitment module in HRIS Darwinbox (Sept 2024)</li>
-            <li>🧠 Develop Online Psychotest & HRD Room system (Jan 2025)</li>
-        </ul>
+<section id="experience">
+    <div class="card">
+        <h2>Experience</h2>
+        <p>Konten experience kamu taruh lagi di sini nanti (tidak hilang, cuma dipindah).</p>
     </div>
-
-    <hr style="border:0.5px solid #334155; margin:30px 0;">
-
-    <!-- Mega Perintis -->
-    <div style="margin-bottom:45px;">
-        <h3>👔 PT Mega Perintis Tbk</h3>
-        <p><i>Retail Fashion — Manzone, Minimal, MOC, Edwin, Puma, Levis</i></p>
-        <p><b>Talent Acquisition & People Development Supervisor | Feb 2022 – Apr 2024</b></p>
-
-        <ul style="margin-top:15px; line-height:1.9;">
-            <li>🎯 Handled end-to-end recruitment from staff to managerial level and onboarding process</li>
-            <li>📈 Achieved 95% hiring SLA across all positions by year-end</li>
-            <li>🧪 Conducted interviews, psychotests, and skill assessments</li>
-            <li>🏬 Supported new store projects (SPG/SPB) fulfillment in Jabodetabek area</li>
-            <li>🔄 Managed internal promotion, mutation, and rotation</li>
-            <li>📣 Designed employer branding calendar & managed recruitment media</li>
-            <li>🆔 Managed NIK approval for Head Office & outlets and maintained job postings</li>
-        </ul>
-    </div>
-
-    <hr style="border:0.5px solid #334155; margin:30px 0;">
-
-    <!-- Tuffindo -->
-    <div style="margin-bottom:45px;">
-        <h3>🏭 PT Tuffindo Raya Group</h3>
-        <p><i>Chemical Manufacturing — Supplier to Astra Group, Toyota, Hino</i></p>
-        <p><b>HR Generalist Supervisor | Dec 2017 – Jan 2022</b></p>
-
-        <ul style="margin-top:15px; line-height:1.9;">
-            <li>📊 Achieved 100% employee fulfillment based on operational manpower analysis</li>
-            <li>🎓 Designed 33 training & development programs with 100% completion rate</li>
-            <li>✅ Developed induction & quality procedures — scored 100 points in audit (2020)</li>
-            <li>💻 Implemented HRIS Talenta from planning to 100% Go-Live (2021)</li>
-            <li>💼 Managed recruitment, payroll, BPJS, contracts, bonuses, and THR</li>
-        </ul>
-
-        <p style="margin-top:20px;"><b>Quality Assurance Officer | Feb 2017 – Jan 2021</b></p>
-        <ul style="margin-top:10px; line-height:1.9;">
-            <li>📋 Managed ISO 9001 audits with 0 minor & 0 major findings</li>
-            <li>🌱 Led ISO 9001 & 14001 integration audit and obtained ISO 14001 certification</li>
-        </ul>
-    </div>
-
-</div>
-    
 </section>
 
 <footer>
     © 2026 Fina Erviana — Personal Branding Portfolio
 </footer>
-
-<script>
-const cards = document.querySelectorAll('.card');
-window.addEventListener('scroll', () => {
-    cards.forEach(card => {
-        const top = card.getBoundingClientRect().top;
-        if(top < window.innerHeight - 100){
-            card.classList.add('show');
-        }
-    });
-});
-</script>
 
 </body>
 </html>
