@@ -75,10 +75,11 @@ h1{font-size:44px;font-weight:600;margin-bottom:10px}
 }
  
 /* books */
-.book-grid{
+.book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px,1fr));
-  gap: 28px;
+  /* Menggunakan 180px agar kotak tidak terlalu lebar ke samping */
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); 
+  gap: 32px; /* Jarak antar buku diperlebar sedikit */
   margin-top: 24px;
 }
 
@@ -89,18 +90,21 @@ h1{font-size:44px;font-weight:600;margin-bottom:10px}
   transition: transform .2s ease, box-shadow .2s ease;
 }
 
-.book-item img{
+.book-item img {
   width: 100%;
-  height: 220px;
-  object-fit: cover;
+  height: 260px; /* Ditambah tingginya agar lebih proporsional seperti buku asli */
+  object-fit: cover; 
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 1px solid #eee; /* Opsional: memberi garis tipis agar gambar putih tidak menyatu dengan BG */
 }
 
-.book-item p{
+.book-item p {
   margin-top: 12px;
   font-weight: 500;
   font-size: 14px;
+  line-height: 1.4;
+  padding: 0 5px; /* Memberi ruang di kiri kanan teks */
 }
 
 .book-item:hover{
